@@ -1,0 +1,26 @@
+# clé de signature : jamais dans le dépôt
+*.jks
+*.keystore
+keystore.properties
+
+# artefacts de build
+build/
+out/
+*.apk
+*.aab
+.gradle/
+local.properties
+
+# vecteurs fastText bruts et lexiques binaires générés (trop volumineux,
+# à régénérer via outils/build_lexiques.py ou à distribuer en Release)
+app/src/main/assets/www/lexiques/lexique-*.bin
+outils/data/
+
+# Python
+__pycache__/
+*.pyc
+
+# éditeurs / OS
+.idea/
+.DS_Store
+*.iml

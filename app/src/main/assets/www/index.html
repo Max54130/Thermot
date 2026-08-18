@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="sombre">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>Thermot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="decor" aria-hidden="true"></div>
+
+<div id="splash" class="splash">
+  <div class="logo" aria-hidden="true">
+    <div class="logo-mot">THERMOT</div>
+    <div class="logo-bande">
+      <i class="logo-jauge" id="splash-jauge"></i>
+      <b style="left:15%"></b><b style="left:26.7%"></b><b style="left:38.3%"></b>
+      <b style="left:50%"></b><b style="left:61.7%"></b><b style="left:73.3%"></b><b style="left:85%"></b>
+    </div>
+  </div>
+  <p class="splash-sous" id="splash-sous"></p>
+  <p id="splash-etat" class="splash-etat"></p>
+</div>
+
+<div id="appli" class="appli" hidden>
+
+  <header class="entete verre">
+    <div class="entete-ligne">
+      <button class="bouton-icone" id="btn-menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="entete-titre">
+        <span class="marque">THERMOT</span>
+        <span id="entete-mode" class="mode"></span>
+      </div>
+      <button class="bouton-icone langue" id="btn-langue">FR</button>
+      <button class="bouton-icone" id="btn-theme"></button>
+      <button class="bouton-icone" id="btn-stats">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V14M12 20V5M19 20v-9"/></svg>
+      </button>
+    </div>
+
+    <div class="bande" id="bande">
+      <div class="bande-spectre"></div>
+      <div class="bande-marques" id="bande-marques"></div>
+      <i class="aiguille" id="aiguille" hidden></i>
+      <div class="bande-legende">
+        <span id="legende-froid"></span><span id="legende-tiede"></span><span id="legende-chaud"></span>
+      </div>
+    </div>
+
+    <div class="resume" id="resume">
+      <span id="resume-essais"></span>
+      <span id="resume-record"></span>
+    </div>
+  </header>
+
+  <main class="liste" id="liste">
+    <p class="vide" id="vide"></p>
+  </main>
+
+  <div class="pied verre">
+    <form class="saisie" id="saisie" autocomplete="off">
+      <input id="champ" type="text" inputmode="text" autocapitalize="none" autocorrect="off"
+             spellcheck="false">
+      <button type="submit" class="bouton-envoi" aria-label="→">→</button>
+    </form>
+    <p class="message" id="message" role="status"></p>
+  </div>
+
+</div>
+
+<div class="voile" id="voile" hidden>
+  <div class="panneau verre" id="panneau" role="dialog" aria-modal="true">
+    <button class="panneau-fermer" id="btn-fermer">×</button>
+    <div id="panneau-contenu"></div>
+  </div>
+</div>
+
+<script src="variante.js"></script>
+<script src="langues.js"></script>
+<script src="moteur.js"></script>
+<script src="jeu.js"></script>
+</body>
+</html>

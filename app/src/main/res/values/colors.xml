@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nuit">#070A14</color>
+    <color name="jour">#EEF1FA</color>
+    <color name="braise">#FF7A3C</color>
+    <color name="icone_fond">#0B1024</color>
+</resources>

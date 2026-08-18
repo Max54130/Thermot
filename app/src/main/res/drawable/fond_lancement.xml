@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Écran de lancement natif : le fond de marque s'affiche avant même
+     que la WebView ne soit prête, ce qui évite tout flash blanc. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="72%p"
+                android:centerX="0.5"
+                android:centerY="0.36"
+                android:startColor="#182347"
+                android:endColor="#070A14" />
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:width="132dp"
+        android:height="132dp"
+        android:drawable="@mipmap/ic_launcher" />
+</layer-list>
